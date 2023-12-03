@@ -1,0 +1,11 @@
+{% extends "polls/base.html"%}
+<a href="{{ viewlist_url }}">Đến trang chi tiết bài viết</a>
+{% block content123 %}
+{% if dsquest %}
+   {% for item in dsquest%}
+      <p>{{item.quetions_text}}</p>    
+   {%endfor%} 
+{%else%}
+ <h3 style = "color: red;"> khong co du lieu </h3>
+{%endif%}
+{% endblock %}

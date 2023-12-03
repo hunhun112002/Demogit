@@ -1,0 +1,14 @@
+{%extends 'polls/base.html'%}
+
+{%block content123%}
+        <h1>Xin chao toi ten la pham the hung </h1>
+        <h2> toi den tu dak nong</h2>
+        <h3> tai san gom </h3>
+        <ul>
+            {% for index in taisan %}
+             {% if index != "may tinh"%} 
+             <li>{{index}} </li>
+             {% endif %}
+            {%  endfor %}
+        </ul> 
+{% endblock %} 
